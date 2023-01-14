@@ -1,0 +1,24 @@
+h1{
+    text-align: center; 
+    color: red
+}
+
+#test{
+    color:deeppink;
+}
+p{
+    color: blue /*!important*/;
+}
+.super-vip{
+    text-transform: uppercase;
+    color:orange
+}
+.vip{
+    font-style: italic;
+    font-weight: 900;
+    color:rgb(0, 118, 8);
+}
+
+div#qqq.xxx ul#www.rrr li.ttt.yyy a#iii.ppp span.bbb.nnn{
+
+}

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Motel';
+  src: url("Motel.eot");
+  src: url("Motel.eot?#iefix") format('embedded-opentype'),
+       url("Motel.otf") format('otf'),
+       url("Motel.svg#Motel%20King%20Medium%28RUS%20by%20Slavchansky%29") format('svg'),
+       url("Motel.ttf") format('truetype'),
+       url("Motel.woff") format('woff');
+}
