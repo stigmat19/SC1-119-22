@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 10000px;
+        }
+        h1 + p{
+            color: red;
+        }
+        h1 ~ p{
+            font-style: italic;
+        }
+
+        div > span{
+            color: blue;
+        }
+        [type="text"]{
+            border: 2px solid red;
+        }
+        [type="email"]{
+            border: 2px solid blue;
+        }
+        [type="password"]{
+            border: 2px solid green;
+        }
+        [type="number"]{
+            border: 2px solid orange;
+        }
+        /* a[href^="http"]{
+            color: red;
+        }
+        a[href^="https"]{
+            color: green;
+        }
+        a[href$="by/"]{
+            font-weight: bold;
+        }
+        a[href$="ru/"]{
+            font-style: italic;
+        }
+        a[href$="8080/"]{
+            text-decoration: line-through;
+        }
+        a[href*="aliexpress"]{
+            text-transform: uppercase;
+        } */
+        p::first-letter{
+            font-size: 50px;
+        }
+        p::first-line{
+            color: red;
+            text-decoration: underline;
+        }
+        p::selection{
+            background: #000;
+            color: rgb(0, 203, 0);
+        }
+        ul{
+            counter-reset: planet;
+        }
+        ul li::before{
+            counter-increment: planet +1;
+            content: "Планета " counter(planet) ": "
+        }
+
+        ul:last-child{
+            counter-reset: planet1;
+        }
+        ul:last-child li::before{
+            counter-increment: planet1 +1;
+            content: "Hello " counter(planet1) ": "
+        }
+
+        a:link{
+            color: orange;
+        }
+        a:visited{
+            color:rgb(0, 51, 0);
+        }
+        a:active{
+            font-weight: 900;
+        }
+        a:focus{
+            font-style: italic;
+        }
+        a:hover{
+            background:aqua;
+        }
+        li:nth-child(3n+1){
+            background: #333;
+            color: #fff;
+        }
+        /* li:last-child{
+            background: #333;
+            color: #fff;
+        } */
+    </style>
+</head>
+<body>
+
+    <h1>text</h1>
+
+    <p>world</p>
+    <p>hello</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quam dignissimos beatae qui illo doloribus inventore commodi, eveniet architecto velit nam eaque quidem minima enim fugit officiis est perspiciatis soluta.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste vero perspiciatis, nulla nisi vitae temporibus cupiditate excepturi dolorem perferendis natus illo magni commodi ipsam quam ex iure ad, nostrum in.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita ipsam eaque animi suscipit nihil aspernatur ipsa modi incidunt quo, vel facilis eum accusantium harum dolorem sint, repudiandae ipsum labore repellendus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque impedit placeat non, animi voluptatem quia expedita aliquam illo excepturi delectus voluptatibus recusandae fuga, ab suscipit veritatis eaque consequuntur commodi. Fugiat!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique distinctio ipsa quam repudiandae sint quae cumque alias obcaecati voluptatibus voluptates odio, impedit accusamus laudantium veniam ad earum beatae non repellat.</p>
+    
+    <hr>
+
+    <span>span1</span>
+
+    <div>1
+        <span>span2</span>
+
+        <p>
+            <span>span3</span>
+        </p>
+    </div>
+
+    <hr>
+
+    <input type="text"> <br>
+    <input type="email" title="hello"> <br>
+    <input type="number"> <br>
+    <input type="password" title="hello"> <br>
+
+    <hr>
+
+    <a href="https://av.by/">av.by</a> <br>
+    <a href="https://aliexpress111.ru/">aliexpress.ru</a> <br>
+    <a href="http://142.93.172.35:8080/">142.93.172.35:8080assasas</a>
+
+    <hr>
+
+    <ul>
+        <li>Венера</li>
+        <li>Земля</li>
+        <li>Марс</li>
+        <li>Юпитер</li>
+        <li>Сатурн</li>
+        <li>Нептун</li>
+        <li>Уран</li>
+        <li>Меркурий</li>
+    </ul>
+
+    <ul>
+        <li>Венера</li>
+        <li>Земля</li>
+        <li>Марс</li>
+        <li>Юпитер</li>
+        <li>Сатурн</li>
+        <li>Нептун</li>
+        <li>Уран</li>
+        <li>Меркурий</li>
+    </ul>
+
+</body>
+</html>
